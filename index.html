@@ -29,27 +29,30 @@
 
     </header>
     <section id="Home">
-        <div class="flex-container twocol">
-            <div id="intro">
+        <div class="flex-container no-wrap">
+            <div class="intro">
+                <br>
+                <br>
                 <p class=hi> Hi There <img src=./assets/images/emoji.svg alt="" /> I'm </p>
                 <h1>Xuyang Zhang</h1>
-                <h3>Tech Evangelist + Full Stack Developer </h3>
+                <p class="bigFont">Tech Evangelist + Full Stack Developer </p>
                 <p class=info> I’m a Full Stack Developer that started as a Technical Implementation Consultant in
                     End-User
                     Computing Field.
                 </p>
             </div>
-            <div class="memoji largeimg">
+            <div class="largememoji">
                 <img src=./assets/images/me_behind_laptop.png alt="Author's memoji figure behind a laptop" />
             </div>
-            <!-- <a href=#ContactMe> <span>Hire Me</span> </a> -->
+            
         </div>
+        <a class="btn" href=#ContactMe> <span>Hire Me</span> </a>
     </section>
 
     <section id="AboutMe">
         <h2>About Me</h2>
-        <div class="flex-container twocol">
-            <div>
+        <div class="flex-container">
+            <div class="intro">
                 <p>
                     I'm Xuyang Zhang, a professional Software Engineer located in Atlanta, Georgia. I have a serious
                     desire for
@@ -79,7 +82,7 @@
                     project I lay my hands on.
                 </p>
             </div>
-            <div class="memoji">
+            <div class="largememoji">
                 <img src=./assets/images/me_greeting.png alt="Author's memoji figure waving hand to greet" />
             </div>
         </div>
@@ -87,69 +90,75 @@
 
     <section id="MySkills">
         <h2>My Skills</h2>
-        <div class="flex-container threecol">
-            <div class="memoji">
-                <img src=./assets/images/me_thumbup.png alt="Author's memoji figure with a thumb up" />
-            </div>
-            <div class="datacard">
-                <div class="frontend">
-                    <label for="HTML">HTML</label>
-
-                    <progress id="HTML" max="100" value="80"> 80% </progress>
+        <div class="flex-container">
+            <div class="wrappercard">
+                <div class="memoji">
+                    <img src=./assets/images/me_thumbup.png alt="Author's memoji figure with a thumb up" />
                 </div>
-                <div class="frontend">
-                    <label for="CSS">CSS</label>
+                <div class="datacard">
+                    <div class="frontend">
+                        <label for="HTML">HTML</label>
 
-                    <progress id="CSS" max="100" value="50"> 50% </progress>
-                </div>
-                <div class="frontend">
-                    <label for="Javascript">Javascript</label>
+                        <progress id="HTML" max="100" value="80"> 80% </progress>
+                    </div>
+                    <div class="frontend">
+                        <label for="CSS">CSS</label>
 
-                    <progress id="Javascript" max="100" value="30"> 30% </progress>
-                </div>
-            </div>
-            <div class="memoji">
-                <img src=./assets/images/me_fistbump.png alt="Author's memoji figure doing a fist bump" />
-            </div>
-            <div class="datacard">
-                <div class="backend">
-                    <label for="Java">Java</label>
+                        <progress id="CSS" max="100" value="50"> 50% </progress>
+                    </div>
+                    <div class="frontend">
+                        <label for="Javascript">Javascript</label>
 
-                    <progress id="Java" max="100" value="50"> 50% </progress>
-                </div>
-                <div class="backend">
-                    <label for="SQL">SQL</label>
-
-                    <progress id="SQL" max="100" value="60"> 60% </progress>
+                        <progress id="Javascript" max="100" value="30"> 30% </progress>
+                    </div>
                 </div>
             </div>
-            <div class="memoji">
-                <img src=./assets/images/me_thinking.png
-                    alt="Author's memoji figure with a body guesture of thinking" />
+            <div class="wrappercard">
+                <div class="memoji">
+                    <img src=./assets/images/me_fistbump.png alt="Author's memoji figure doing a fist bump" />
+                </div>
+                <div class="datacard">
+                    <div class="backend">
+                        <label for="Java">Java</label>
+
+                        <progress id="Java" max="100" value="50"> 50% </progress>
+                    </div>
+                    <div class="backend">
+                        <label for="SQL">SQL</label>
+
+                        <progress id="SQL" max="100" value="60"> 60% </progress>
+                    </div>
+                </div>
             </div>
-            <div class="datacard">
-                <div class="otherskill">
-                    <label for="EMM">Enterprise Mobility Management</label>
-
-                    <progress id="EMM" max="100" value="95"> 95% </progress>
+            <div class="wrappercard">
+                <div class="memoji">
+                    <img src=./assets/images/me_thinking.png
+                        alt="Author's memoji figure with a body guesture of thinking" />
                 </div>
+                <div class="datacard">
+                    <div class="otherskill">
+                        <label for="EMM">Enterprise Mobility Management</label>
 
-                <div class="otherskill">
-                    <label for="IAM">Identity and Access Management</label>
+                        <progress id="EMM" max="100" value="95"> 95% </progress>
+                    </div>
 
-                    <progress id="IAM" max="100" value="85"> 85% </progress>
-                </div>
+                    <div class="otherskill">
+                        <label for="IAM">Identity and Access Management</label>
 
-                <div class="otherskill">
-                    <label for="Consulting">IT Consulting</label>
+                        <progress id="IAM" max="100" value="85"> 85% </progress>
+                    </div>
 
-                    <progress id="Consulting" max="100" value="85"> 85% </progress>
-                </div>
+                    <div class="otherskill">
+                        <label for="Consulting">IT Consulting</label>
 
-                <div class="otherskill">
-                    <label for="PJM">Project Management</label>
+                        <progress id="Consulting" max="100" value="85"> 85% </progress>
+                    </div>
 
-                    <progress id="PJM" max="100" value="75"> 75% </progress>
+                    <div class="otherskill">
+                        <label for="PJM">Project Management</label>
+
+                        <progress id="PJM" max="100" value="75"> 75% </progress>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,22 +174,22 @@
 
     <section id="ContactMe">
         <h2>Connect with Xuyang</h2>
-        <div class="flex-container twocol">
-            <div class="memoji">
-                <img src=./assets/images/me_callme.png alt="Author's memoji figure with a call me hand sign" />
-            </div>
-            <div class="flex-container threecol">
+        <div class="flex-container">
+            
+            <img class="memoji" src=./assets/images/me_callme.png alt="Author's memoji figure with a call me hand sign" />
+            
+            <div class="flex-container">
                 <div class="datacard">
                     <h3>Email</h3>
-                    <a href="mailto:zhangxuyang.chn@gmail.com">Drop me an Email!</a>
+                    <a class="btn" href="mailto:zhangxuyang.chn@gmail.com">Drop me an Email!</a>
                 </div>
                 <div class="datacard">
                     <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/xuyangzhang/">Let's connect on LinkedIn!</a>
+                    <a class="btn" href="https://www.linkedin.com/in/xuyangzhang/">Let's connect on LinkedIn!</a>
                 </div>
                 <div class="datacard">
                     <h3>GitHub</h3>
-                    <a href="https://github.com/XuyangZhang0">Follow me on GitHub!</a>
+                    <a class="btn" href="https://github.com/XuyangZhang0">Follow me on GitHub!</a>
                 </div>
             </div>
         </div>
