@@ -91,7 +91,7 @@ nav {
     width:100%;
     
     
-    opacity: 0.5;
+    opacity: 0.3;
 }
   
 nav a {
@@ -121,7 +121,8 @@ nav a {
 }
 
 .memoji {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
 }
 
 
@@ -138,6 +139,9 @@ nav a {
     border-radius: 20px;
     padding : 1em;
     margin: 2em;
+    padding-bottom: 5em;
+   
+
 
 }
 
@@ -164,6 +168,14 @@ nav a {
 #AboutMe .intro {
     max-width: 70%;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 10rem;
+    width: 10rem;
+    text-align: center;
+    text-decoration: none;
+  }
 
 @media screen and (max-width:768px){
     .wrappercard {
