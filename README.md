@@ -4,6 +4,9 @@
 
 This website is used to present myself and my work as a professional full stack developer. People that are interested can learn more about me, including my background, interests, as well as my previous work that can demonstrate my skills.
 
+## GitHub Deployed Page Link
+[xyz_about_me](https://xuyangzhang0.github.io/xyz_about_me/)
+
 ## Site Structure
 
 - Home 
