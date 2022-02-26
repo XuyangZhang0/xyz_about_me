@@ -4,11 +4,13 @@
 <head>
     <title>XYZ | Full Stack Dev</title>
     <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1" />
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 
     <meta charset="UTF-8" />
 
@@ -16,7 +18,7 @@
 
 <body>
     <!-- header with fixed nav bar -->
-    <header> 
+    <header>
         <nav>
             <a href=#Home>Home</a>
             <a href=#AboutMe>About Me</a>
@@ -25,7 +27,7 @@
             <a href=#ContactMe>Contact Me</a>
         </nav>
     </header>
-<!-- Home section with quick view of myself -->
+    <!-- Home section with quick view of myself -->
     <section id="Home">
         <div class="flex-container no-wrap space-around">
             <div class="intro">
@@ -44,7 +46,7 @@
             </div>
         </div>
     </section>
-<!-- About me section with detailed intro -->
+    <!-- About me section with detailed intro -->
     <section id="AboutMe">
         <div class="blank-space"></div>
         <h2>About Me</h2>
@@ -84,7 +86,7 @@
             </div>
         </div>
     </section>
-<!-- Skills section with categories of skills -->
+    <!-- Skills section with categories of skills -->
     <section id="MySkills">
         <div class="blank-space"></div>
         <h2>My Skills</h2>
@@ -157,7 +159,7 @@
             </div>
         </div>
     </section>
-<!-- Portfolio section which will hopefully be filled -->
+    <!-- Portfolio section which will hopefully be filled -->
     <section id="MyPortfolio">
         <div class="blank-space"></div>
         <h2>My Portfolio</h2>
@@ -166,52 +168,117 @@
                 <img src=./assets/images/me_ideas.png alt="Author's memoji figure with a light bulb above head" />
             </div> -->
             <div class="flex-container">
-                <div class="wrappercard full-width portfolioitem">
+                <!-- <div class="wrappercard full-width portfolioitem">
                     <a href="https://amywilhoite.github.io/reddit-data-dive/">
                         <img src=./assets/images/Reddit_Data_Dive.png alt="Reddit Data Dive Screenshot" style="max-height: 400px; width: auto;"/>
                         <p>Reddit Data Dive</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard full-width portfolioitem text-center ">
+                    <img src="./assets/images/Reddit_Data_Dive.png" class="card-img-top"
+                        alt="Reddit Data Dive Screenshot" style="max-height: 400px; width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Reddit Data Dive</h5>
+                        <a href="https://github.com/AmyWilhoite/reddit-data-dive" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://amywilhoite.github.io/reddit-data-dive/" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
-                <div class="wrappercard portfolioitem">
+                <!-- <div class="wrappercard portfolioitem">
                     <a href="https://xuyangzhang0.github.io/Weather-Dashboard/">
-                        <img class="small-size" src=./assets/images/weather_dashboard_screenshot.png alt="Weather Dashboard Screenshot" />
+                        <img class="small-size" src=./assets/images/weather_dashboard_screenshot.png
+                            alt="Weather Dashboard Screenshot" />
                         <p>Weather Dashboard</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard portfolioitem text-center">
+                    <img src="./assets/images/weather_dashboard_screenshot.png" class="card-img-top small-size"
+                        alt="Weather Dashboard Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Weather Dashboard</h5>
+                        <a href="https://github.com/xuyangzhang0/Weather-Dashboard/" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://xuyangzhang0.github.io/Weather-Dashboard/" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
-                <div class="wrappercard portfolioitem">
+                <!-- <div class="wrappercard portfolioitem">
                     <a href="https://xuyangzhang0.github.io/Work_Day_Scheduler/">
-                        <img class="small-size" src=./assets/images/WorkDayScheduler.gif alt="Workday Scheduler Screenshot" />
+                        <img class="small-size" src=./assets/images/WorkDayScheduler.gif
+                            alt="Workday Scheduler Screenshot" />
                         <p>Workday Scheduler</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard portfolioitem text-center">
+                    <img src="./assets/images/WorkDayScheduler.gif" class="card-img-top small-size"
+                        alt="Workday Scheduler Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Workday Scheduler</h5>
+                        <a href="https://github.com/xuyangzhang0/Work_Day_Scheduler/" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://xuyangzhang0.github.io/Work_Day_Scheduler/" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
-                <div class="wrappercard portfolioitem">
+                <!-- <div class="wrappercard portfolioitem">
                     <a href="https://xuyangzhang0.github.io/Code_Quiz/">
                         <img class="small-size" src=./assets/images/CodeQuiz.gif alt="Code Quiz Screenshot" />
                         <p>Code Quiz</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard portfolioitem text-center">
+                    <img src="./assets/images/CodeQuiz.gif" class="card-img-top small-size"
+                        alt="Code Quiz Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Code Quiz</h5>
+                        <a href="https://github.com/xuyangzhang0/Code_Quiz/" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://xuyangzhang0.github.io/Code_Quiz/" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
-                <div class="wrappercard portfolioitem">
+                <!-- <div class="wrappercard portfolioitem">
                     <a href="https://xuyangzhang0.github.io/passwordGenerator/">
                         <img class="small-size" src=./assets/images/password_generator.gif alt="Password Generator" />
                         <p>Password Generator</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard portfolioitem text-center">
+                    <img src="./assets/images/password_generator.gif" class="card-img-top small-size"
+                        alt="Password Generator Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Password Generator</h5>
+                        <a href="https://github.com/xuyangzhang0/passwordGenerator/" target="_blank" class="card-link">GitHub</a>
+                        <a href="https://xuyangzhang0.github.io/passwordGenerator/" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
-                <div class="wrappercard portfolioitem">
+                <!-- <div class="wrappercard portfolioitem">
                     <a href="comingsoon.html">
                         <img class="small-size" src=./assets/images/placeholder2.png alt="Portfolio 6 Screenshot" />
                         <p>Portfolio Item 6</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard portfolioitem text-center">
+                    <img src="./assets/images/placeholder2.png" class="card-img-top small-size"
+                        alt="Portfolio Item 6 Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Portfolio Item 6</h5>
+                        <a href="comingsoon.html" target="_blank" class="card-link">GitHub</a>
+                        <a href="comingsoon.html" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
-                <div class="wrappercard portfolioitem">
+                <!-- <div class="wrappercard portfolioitem">
                     <a href="comingsoon.html">
                         <img class="small-size" src=./assets/images/placeholder2.png alt="Portfolio 7 Screenshot" />
                         <p>Portfolio Item 7</p>
                     </a>
+                </div> -->
+                <div class="card mb-3 pt-2 bg-transparent wrappercard portfolioitem text-center">
+                    <img src="./assets/images/placeholder2.png" class="card-img-top small-size"
+                        alt="Portfolio Item 7 Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Portfolio Item 7</h5>
+                        <a href="comingsoon.html" target="_blank" class="card-link">GitHub</a>
+                        <a href="comingsoon.html" target="_blank" class="card-link">Deployed Version</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- Contact me section -->
+    <!-- Contact me section -->
     <section id="ContactMe">
         <div class="blank-space"></div>
         <h2>Connect with Xuyang</h2>
@@ -239,7 +306,9 @@
                 <div class="datacard">
                     <h3>Resume</h3>
                     <!-- <p>Where I keep my open source coding projects</p> -->
-                    <a class="btn" href="https://github.com/XuyangZhang0/xyz_about_me/raw/main/assets/files/Xuyang_Zhang_Resume.pdf">Download a copy of my resume!</a>
+                    <a class="btn"
+                        href="https://github.com/XuyangZhang0/xyz_about_me/raw/main/assets/files/Xuyang_Zhang_Resume.pdf">Download
+                        my resume!</a>
                 </div>
             </div>
         </div>
